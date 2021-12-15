@@ -29,3 +29,7 @@ echo "COMPRESS=xz" > /etc/initramfs-tools/conf.d/compress
 
 # Remove unnecessary ipv6 files
 rm -f /lib/xtables/libip6*.so
+
+# Disabling hibernation
+rm /etc/initramfs-tools/conf.d/resume
+update-initramfs -u
