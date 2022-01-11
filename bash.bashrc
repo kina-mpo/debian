@@ -25,9 +25,9 @@ shopt -s checkwinsize
 
 # PS1 if root/else
 if [ $EUID -eq 0 ] ; then
-	PS1='${RED}\u${RESET}@${YELLOW}\h${RESET}:${CYAN}\w${RESET}\$ '
+	PS1="${RED}\u${RESET}@${GREEN}\h${RESET}:${CYAN}\w${RESET}\$ "
 else
-	PS1='${GREEN}\u${RESET}@${YELLOW}\h${RESET}:${CYAN}\w${RESET}\$ '
+	PS1="${GREEN}\u${RESET}@${GREEN}\h${RESET}:${CYAN}\w${RESET}\$ "
 fi
 
 # Bash completion
