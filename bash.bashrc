@@ -23,7 +23,7 @@ shopt -s histappend
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# PS1 if root/else
+# PS1 if root/sys-account/user
 if [ $EUID -eq 0 ] ; then
 	PS1="${RED}\u${RESET}@${GREEN}\h${RESET}:${CYAN}\w${RESET}\$ "
 elif [ $EUID -gt 0 ] && [ $EUID -lt 999 ] : then
