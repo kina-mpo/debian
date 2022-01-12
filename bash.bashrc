@@ -19,10 +19,6 @@ INFO="[${BLUE}..${RESET}]"
 # Append to the history file, don't overwrite it
 shopt -s histappend
 
-# Check the window size after each command and, if necessary,
-# update the values of LINES and COLUMNS.
-shopt -s checkwinsize
-
 # PS1 if root/sys-account/user
 if [ $EUID -eq 0 ] ; then
 	PS1="${RED}\u${RESET}@${GREEN}\h${RESET}:${CYAN}\w${RESET}\$ "
