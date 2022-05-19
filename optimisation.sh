@@ -27,6 +27,8 @@ rm -rf /usr/share/man
 # Reduce the size of the initramfs
 echo "COMPRESS=xz" > /etc/initramfs-tools/conf.d/compress
 
+# Disabling ipv6
+echo "net.ipv6.conf.all.disable_ipv6=1" >> /etc/sysctl.conf
 # Remove unnecessary ipv6 files
 rm -f /lib/xtables/libip6*.so
 
